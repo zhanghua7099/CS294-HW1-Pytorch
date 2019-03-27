@@ -59,7 +59,7 @@ def Tensor_to_np(action):
 def train(Dataset):
     train_loader = DataLoader(dataset=Dataset, batch_size=32, shuffle=True)
     total_step = len(train_loader)
-    # 训练
+    # train
     for epoch in range(5):
         for i, (o, a) in enumerate(train_loader):
             inputs = o.to(device).float()
