@@ -19,7 +19,7 @@ import load_policy
 
 
 def main():
-    # 载入已学习的专家策略。['GaussianPolicy', 'nonlin_type']
+    # Load the expert policy. ['GaussianPolicy', 'nonlin_type']
     expert_policy_file = 'experts/Humanoid-v2.pkl'
 
     envname = 'Humanoid-v2'
@@ -66,13 +66,14 @@ def main():
         print('mean return', np.mean(returns))
         print('std of return', np.std(returns))
 
-        # 得到数据，存储在expert_data目录下。['observations', 'actions']
+        # Get data. ['observations', 'actions']
         expert_data = {'observations': np.array(observations),
                        'actions': np.array(actions)}
-
+		# Storing data
         with open(os.path.join('expert_data', envname + '.pkl'), 'wb') as f:
             pickle.dump(expert_data, f, pickle.HIGHEST_PROTOCOL)
 
 
 if __name__ == '__main__':
     main()
+ 

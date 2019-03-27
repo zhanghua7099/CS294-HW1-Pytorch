@@ -45,9 +45,9 @@ class Neural_Network(nn.Module):
 
 if __name__ == '__main__':
     train_path = './expert_data/Humanoid-v2.pkl'
-    # pkl转dataset
+    # pkl to dataset
     dealDataset = GetPolicyData(train_path)
-    # 载入数据
+    # load train data
     train_loader = DataLoader(dataset=dealDataset, batch_size=32, shuffle=True)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = Neural_Network(376, 17).to(device)
