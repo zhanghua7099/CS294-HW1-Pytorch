@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77bdfca8-1334-4ae1-b6af-51e37b21d0fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/restore_dagger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/CS294-HW1-Pytorch.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BehaverCloning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../experts/Ant-v2.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../experts/HalfCheetah-v2.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../experts/Hopper-v2.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../experts/Humanoid-v2.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../experts/Reacher-v2.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../experts/Walker2d-v2.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../get_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../load_policy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/test_param.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restore_BehaverCloning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../run_expert_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../show_pkl.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tf_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dagger_data/Dagger.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_data/Humanoid-v2.pkl" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,20 +15,20 @@
     <session id="-1313171627">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="24" />
+          <entry key="py" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="24" />
+          <entry key="Python" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -62,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restore_dagger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="580">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -77,10 +60,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dagger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="48" selection-start-column="48" selection-end-column="48" />
+            <state relative-caret-position="1454">
+              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
               <folding>
+                <element signature="e#0#48#0" expanded="true" />
                 <marker date="1553672344081" expanded="true" signature="2312:2364" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run_expert_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="649">
+              <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+              <folding>
+                <element signature="e#312#321#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,6 +90,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dagger</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -121,6 +122,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,7 +134,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,61 +346,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restore_BehaverCloning.py">
+    <entry file="file://$PROJECT_DIR$/restore_BehaverCloning.py" />
+    <entry file="file://$PROJECT_DIR$/tf_util.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BehaverCloning.py" />
+    <entry file="file://$PROJECT_DIR$/restore_dagger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="28" column="54" selection-end-line="78" />
+        <state relative-caret-position="580">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_expert_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="22" column="33" selection-start-line="22" selection-end-line="23" />
-          <folding>
-            <element signature="e#312#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tf_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BehaverCloning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dagger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="48" selection-start-column="48" selection-end-column="48" />
+        <state relative-caret-position="1454">
+          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
           <folding>
+            <element signature="e#0#48#0" expanded="true" />
             <marker date="1553672344081" expanded="true" signature="2312:2364" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restore_dagger.py">
+    <entry file="file://$PROJECT_DIR$/run_expert_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="649">
+          <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#312#321#0" expanded="true" />
           </folding>
         </state>
       </provider>
